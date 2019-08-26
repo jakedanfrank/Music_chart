@@ -1,0 +1,7 @@
+<h1>New Chart</h1>
+<%= form_for @billboard do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%>
+  <%= f.submit %> 
+  <%= link_to "Back", billboards_path %>
+<% end %>

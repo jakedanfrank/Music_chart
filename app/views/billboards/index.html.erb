@@ -1,0 +1,9 @@
+<h1> The Best Music In The World </h1>
+<p><%= link_to "New Chart", new_billboard_path %></p>
+  <% @billboards.each do |billboard|%>
+  <h2><%= billboard.name %></h2>
+    <%= link_to "Show Chart", billboard_path(billboard) %>
+      <%= link_to "Edit Chart", edit_billboard_path(billboard) %>
+        <%= link_to "Delete Chart", billboard, method: :delete %>
+<% end %>
+
